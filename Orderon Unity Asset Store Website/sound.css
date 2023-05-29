@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', serif;
+}
+
+body {
+    background: black;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+li {
+    color: white;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+li:nth-child(0) {
+    /*border-left: 2px solid #BC26E5;
+    border-right: 2px solid #BC26E5;
+    */
+
+    color: #FFFFFF;
+
+}
+
+li:nth-child(1) {
+    /*border-left: 2px solid #BC26E5;
+    border-right: 2px solid #BC26E5;
+    */
+
+    color: #FFFFFF;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+li {
+    color: white;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+li:nth-child(0) {
+    /*border-left: 2px solid #BC26E5;
+    border-right: 2px solid #BC26E5;
+    */
+
+    color: #FFFFFF;
+
+}
+
+li:nth-child(1) {
+    /*border-left: 2px solid #BC26E5;
+    border-right: 2px solid #BC26E5;
+    */
+
+    color: #FFFFFF;
+
+}
+
+.logo-img {
+    width: 10%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex3 {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.flex4 {
+    display: flex;
+    justify-content: center;
+}
+
+.flex5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-top {
+    padding-top: 2em;
+}
+
+.padding {
+    padding: 1.25em;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+}
+
+.border {
+    border: 1px solid;
+}
+
+.font-size-17 {
+    font-size: 17px;
+}
+
+.text {
+    color:white;
+    font-size: 30px;
+    
+}
+
+.text2 {
+    color: white;
+    font-size: 22px;
+}
+
+.padding-top-5em {
+    padding-top: 5em;
+}
+
+.highlight {
+    color: #82c4af;
+    display: inline-flex;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.button {
+    background-color: transparent;
+    background-image: url("https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871");
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    filter: hue-rotate(294deg);
+}
+
+.button:hover {
+    background-position: center;
+    border: 1px solid #82c4af;
+    filter: hue-rotate(294deg);
+}
+
+#ytico {
+    width: 10%;
+    height: auto;
+}
+
+.max-width {
+    max-width: 765px;
+}
+
+.border2 {
+    border-left: 2px solid #82c4af;
+    border-right: 2px solid #82c4af;
+}
+
+.max-width2 {
+    width: 115%;
+}
+
+.text-align {
+    text-align: center;
+}
