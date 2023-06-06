@@ -23,6 +23,7 @@ body {
 li {
     color: white;
     list-style: none;
+    letter-spacing: 2px;
     
 }
 
@@ -50,9 +51,23 @@ li:nth-child(1) {
 
 }
 
-#logo-img {
+.logo-img {
     width: 10%;
     height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    
 }
 
 .flex {
@@ -102,8 +117,6 @@ li:nth-child(1) {
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 65%;
 }
 
@@ -120,4 +133,363 @@ img {
     background-position: center;
     border: 1px solid #82c4af;
     filter: hue-rotate(294deg);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    letter-spacing: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    .container {
+        max-width: 950px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .font-size-15 {
+        font-size: 15px;
+    }
+
+    .text-26 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .container {
+        max-width: 800px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .font-size-12 {
+        font-size: 12px;
+    }
+
+    .logo-img {
+        width: 10%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 8vh;
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        gap: 4rem;
+        
+    }
+
+    .padding {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    .container {
+        max-width: 800px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .font-size-10 {
+        font-size: 10px;
+    }
+
+    .text-22 {
+        color: white;
+        font-size: 22px;
+    }
+
+    img {
+        display: block;
+        width: 40%;
+    }
+
+    .logo-img {
+        width: 15%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .padding {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .font-size-9 {
+        font-size: 9px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        gap: 3.5rem;
+        
+    }
+
+    .text-20 {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) { /* mobile view */
+    
+
+    .padding {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 25vh;
+        top: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .li-no-display {
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .padding-top-5em {
+        padding-top: 5em;
+    }
+
+    .padding-top-25em {
+        padding-top: 25em;
+    }
+
+    .li-display {
+        display: block;
+        animation-name: test;
+        animation-duration: 2s;
+        
+    }
+
+    @keyframes test {
+        0% {background-color: #82c4af;}
+
+        100% {background-color: black;}
+    }
+    
+    /*
+
+    .nav-mobile {
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*transform: translateX(100%);
+        width: 50%;*/
+    }
+
+@media screen and (max-width: 550px) {
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 25vh;
+        top: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .li-no-display {
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .padding-top-5em {
+        padding-top: 5em;
+    }
+
+    .padding-top-25em {
+        padding-top: 25em;
+    }
+
+    .li-display {
+        display: block;
+        animation-name: test;
+        animation-duration: 2s;
+        
+    }
+
+    @keyframes test {
+        0% {background-color: #82c4af;}
+
+        100% {background-color: black;}
+    }
+
+    .font-size-9 {
+        font-size: 9px;
+    }
+
+    .text-16 {
+        font-size: 18px;
+    }
+
+    .piano-size {
+        width: 40%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 25vh;
+        top: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .li-no-display {
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .padding-top-5em {
+        padding-top: 5em;
+    }
+
+    .padding-top-25em {
+        padding-top: 25em;
+    }
+
+    .li-display {
+        display: block;
+        animation-name: test;
+        animation-duration: 2s;
+        
+    }
+
+    @keyframes test {
+        0% {background-color: #82c4af;}
+
+        100% {background-color: black;}
+    }
+
+    .font-size-9 {
+        font-size: 9px;
+    }
+
+    .text-15 {
+        font-size: 15px;
+    }
+
+    .logo-img {
+        width: 20%;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 370px) {
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 25vh;
+        top: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .li-no-display {
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .padding-top-5em {
+        padding-top: 5em;
+    }
+
+    .padding-top-25em {
+        padding-top: 25em;
+    }
+
+    .li-display {
+        display: block;
+        animation-name: test;
+        animation-duration: 2s;
+        
+    }
+
+    @keyframes test {
+        0% {background-color: #82c4af;}
+
+        100% {background-color: black;}
+    }
+
+    .font-size-9 {
+        font-size: 9px;
+    }
+
+    .text-15 {
+        font-size: 15px;
+    }
+
+    .logo-img {
+        width: 25%;
+        height: auto;
+    }
+
 }
